@@ -1,0 +1,4 @@
+tracker : Tracker.cpp tracker_main.cpp Packet.cpp global.cpp ClientSocket.cpp ServerSocket.cpp
+	g++ -o tracker Tracker.cpp tracker_main.cpp Packet.cpp global.cpp ClientSocket.cpp ServerSocket.cpp -std=c++11 -lcrypto
+peer : Peer.cpp client_main.cpp Packet.cpp global.cpp ClientSocket.cpp ServerSocket.cpp File.cpp
+	g++ -o peer Peer.cpp client_main.cpp Packet.cpp global.cpp ClientSocket.cpp ServerSocket.cpp File.cpp -std=c++11 -lcrypto -Wall
